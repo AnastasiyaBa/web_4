@@ -32,7 +32,7 @@
         
             <label>ФИО</label><br>
             <input type="text" name="full_name" required maxlength="150" 
-                   placeholder="Иванов Иван Иванович"
+                   placeholder="Имя Фамилия"
                    value="<?php echo htmlspecialchars($_COOKIE['full_name'] ?? ''); ?>"
                    class="<?php echo isset($_COOKIE['field_errors']['full_name']) ? 'error-field' : ''; ?>"><br>
             <?php if (isset($_COOKIE['field_errors']['full_name'])): ?>
